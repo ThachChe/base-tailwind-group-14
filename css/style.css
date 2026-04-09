@@ -1,0 +1,21 @@
+*{
+    font-family: 'Outfit', sans-serif;
+}
+
+#banner{
+    background-image: url(../imgs/bg_banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.email_input_change_color{
+    border: 1.5px solid rgba(99, 99, 246, 0.942);
+}
+
+.email_input_change_color:focus-within{
+    border: 1.5px solid blue;
+    
+}
