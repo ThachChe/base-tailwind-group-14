@@ -38,18 +38,572 @@
     <!-- We Offer Great Affordable Premium Prices (2) -->
 
     <!-- Client’s Testimonials -->
+    <section class="py-24 bg-white overflow-hidden reveal">
+      <div class="container mx-auto px-4 md:px-20 lg:px-40">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <h2 class="text-4xl font-bold text-[#1e293b] mb-6">
+            Client’s Testimonials
+          </h2>
+          <p
+            class="text-gray-400 text-[15px] leading-relaxed max-w-2xl mx-auto"
+          >
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+
+        <div class="relative max-w-5xl mx-auto h-[auto]">
+          <div
+            id="slide-1"
+            class="testimonial-slide transition-all duration-500 flex flex-col md:flex-row items-center bg-white shadow-[0_10px_50px_rgba(0,0,0,0.05)] rounded-xl overflow-hidden border border-gray-50 relative"
+          >
+            <div class="w-full md:w-2/5 p-8 md:p-12">
+              <div
+                class="aspect-square w-full rounded-lg overflow-hidden bg-gray-100"
+              >
+                <img
+                  src="imgs/client.jpg"
+                  alt="Client 1"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="w-full md:w-3/5 p-8 md:p-12 md:pl-0 relative">
+              <div
+                class="text-blue-100 text-6xl font-serif absolute top-8 left-0 md:-left-4 leading-none opacity-50"
+              >
+                “
+              </div>
+              <div class="relative z-10">
+                <p class="text-gray-500 italic text-xl leading-relaxed mb-8">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  dolor diam, feugiat quis enim sed, ullamcorper semper ligula."
+                </p>
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="text-[#1e293b] font-bold text-lg">
+                      Devid Smith
+                    </h4>
+                    <p class="text-gray-400 text-sm">Founder @democompany</p>
+                  </div>
+                  <div class="opacity-40 grayscale">
+                    <img
+                      src="imgs/logo/logo_amazon.png"
+                      class="max-h-8 w-auto object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="absolute right-0 top-0 h-full w-[6px] flex flex-col">
+              <div class="h-1/2 bg-blue-500"></div>
+              <div class="h-1/2 bg-pink-400"></div>
+            </div>
+          </div>
+
+          <div
+            id="slide-2"
+            class="testimonial-slide hidden transition-all duration-500 flex flex-col md:flex-row items-center bg-white shadow-[0_10px_50px_rgba(0,0,0,0.05)] rounded-xl overflow-hidden border border-gray-50 relative"
+          >
+            <div class="w-full md:w-2/5 p-8 md:p-12">
+              <div
+                class="aspect-square w-full rounded-lg overflow-hidden bg-gray-100"
+              >
+                <img
+                  src="imgs/client.jpg"
+                  alt="Client 2"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="w-full md:w-3/5 p-8 md:p-12 md:pl-0 relative">
+              <div
+                class="text-blue-100 text-6xl font-serif absolute top-8 left-0 md:-left-4 leading-none opacity-50"
+              >
+                “
+              </div>
+              <div class="relative z-10">
+                <p class="text-gray-500 italic text-xl leading-relaxed mb-8">
+                  "It is a long established fact that a reader will be
+                  distracted by the readable content of a page when looking at
+                  its layout."
+                </p>
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="text-[#1e293b] font-bold text-lg">
+                      Devid Smith
+                    </h4>
+                    <p class="text-gray-400 text-sm">Founder @democompany</p>
+                  </div>
+                  <div class="opacity-40 grayscale">
+                    <img
+                      src="imgs/logo/logo_amazon.png"
+                      class="max-h-8 w-auto object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="absolute right-0 top-0 h-full w-[6px] flex flex-col">
+              <div class="h-1/2 bg-blue-500"></div>
+              <div class="h-1/2 bg-pink-400"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-4 mt-12">
+          <button
+            onclick="toggleSlide()"
+            class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button
+            onclick="toggleSlide()"
+            class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white shadow-lg hover:bg-blue-700 transition-all"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
 
     <!-- Number CountUp.js -->
+    <section
+      id="counter-section"
+      class="relative py-24 bg-[#f8faff] overflow-hidden reveal-count"
+    >
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="count-item">
+            <h2
+              id="count1"
+              class="text-5xl md:text-6xl font-bold text-[#1e293b] mb-3"
+            >
+              0
+            </h2>
+            <p class="text-gray-400 text-lg">Global Brands</p>
+          </div>
+          <div class="count-item">
+            <h2
+              id="count2"
+              class="text-5xl md:text-6xl font-bold text-[#1e293b] mb-3"
+            >
+              0
+            </h2>
+            <p class="text-gray-400 text-lg">Happy Clients</p>
+          </div>
+          <div class="count-item">
+            <h2
+              id="count3"
+              class="text-5xl md:text-6xl font-bold text-[#1e293b] mb-3"
+            >
+              0
+            </h2>
+            <p class="text-gray-400 text-lg">Winning Award</p>
+          </div>
+          <div class="count-item">
+            <h2
+              id="count4"
+              class="text-5xl md:text-6xl font-bold text-[#1e293b] mb-3"
+            >
+              0
+            </h2>
+            <p class="text-gray-400 text-lg">Happy Clients</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Trusted by Global Brands -->
+    <script>
+      // Cấu hình CountUp khi trang web load xong
+      window.onload = () => {
+        const options = { duration: 3, useEasing: true, useGrouping: true };
 
+        new countUp.CountUp("count1", 785, options).start();
+        new countUp.CountUp("count2", 533, options).start();
+        new countUp.CountUp("count3", 865, options).start();
+        new countUp.CountUp("count4", 346, options).start();
+      };
+    </script>
+    <!-- Trusted Brands -->
+    <section
+      class="py-20 px-10 md:px-20 lg:px-40 bg-white reveal-brands"
+      id="brands"
+    >
+      <div class="container mx-auto">
+        <div class="max-w-3xl mx-auto text-center mb-20 brand-content">
+          <h1 class="text-4xl font-bold text-[#0f172a] mb-6">
+            Trusted by Global Brands
+          </h1>
+          <p
+            class="text-gray-400 text-[15px] leading-relaxed max-w-2xl mx-auto"
+          >
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using.
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 items-center mb-24 grayscale"
+        >
+          <a href="#" class="flex justify-center brand-item">
+            <img
+              src="imgs/logo/logo_logitech.png"
+              alt="Logitech"
+              class="max-h-32 w-auto object-contain"
+            />
+          </a>
+          <a href="#" class="flex justify-center brand-item">
+            <img
+              src="imgs/logo/logo_dropcam.png"
+              alt="Dropcam"
+              class="max-h-32 w-auto object-contain"
+            />
+          </a>
+          <a href="#" class="flex justify-center brand-item">
+            <img
+              src="imgs/logo/logo_AMD.png"
+              alt="AMD"
+              class="max-h-32 w-auto object-contain"
+            />
+          </a>
+          <a href="#" class="flex justify-center brand-item">
+            <img
+              src="imgs/logo/logo_nike.png"
+              alt="Nike"
+              class="max-h-32 w-auto object-contain"
+            />
+          </a>
+          <a href="#" class="flex justify-center brand-item">
+            <img
+              src="imgs/logo/mandiri_logo.png"
+              alt="Mandiri"
+              class="max-h-10 w-auto object-contain"
+            />
+          </a>
+          <a href="#" class="flex justify-center brand-item">
+            <img
+              src="imgs/logo/logo_amazon.png"
+              alt="Amazon"
+              class="max-h-10 w-auto object-contain"
+            />
+          </a>
+        </div>
+        <hr class="border-gray-100 w-full" />
+      </div>
+    </section>
     <!-- Latest Blogs & News -->
+    <section
+      class="py-20 px-10 md:px-20 lg:px-40 bg-white reveal-blogs"
+      id="latest-blogs"
+    >
+      <div class="max-w-3xl mx-auto text-center mb-16 blog-header">
+        <h2 class="text-4xl font-bold text-[#1e293b] mb-6">
+          Latest Blogs & News
+        </h2>
+        <p class="text-gray-400 leading-relaxed max-w-2xl mx-auto text-[15px]">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="blog-card blog-card-item bg-white overflow-hidden border border-gray-100 group"
+        >
+          <div class="h-60 overflow-hidden relative">
+            <img
+              src="imgs/blogs_img_1.jpg"
+              alt="Advertising"
+              class="w-full h-full object-cover"
+            />
+            <div class="blog-overlay">
+              <a href="#" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-5 text-[17px] text-gray-400 mb-4">
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-user"></i><span>Musharof Chy</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-calendar-days"></i
+                ><span>25 Dec, 2025</span>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="blog-title text-[22px] font-bold text-[#1e293b] leading-tight block"
+            >
+              Free advertising for your online business
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="blog-card blog-card-item bg-white overflow-hidden border border-gray-100 group"
+        >
+          <div class="h-60 overflow-hidden relative">
+            <img
+              src="imgs/blogs_img_2.jpg"
+              alt="Design"
+              class="w-full h-full object-cover"
+            />
+            <div class="blog-overlay">
+              <a href="#" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-5 text-[17px] text-gray-400 mb-4">
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-user"></i><span>Musharof Chy</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-calendar-days"></i
+                ><span>25 Dec, 2025</span>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="blog-title text-[22px] font-bold text-[#1e293b] leading-tight block"
+            >
+              9 simple ways to improve your design skills
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="blog-card blog-card-item bg-white overflow-hidden border border-gray-100 group"
+        >
+          <div class="h-60 overflow-hidden relative">
+            <img
+              src="imgs/blogs_img_3.png"
+              alt="Coding"
+              class="w-full h-full object-cover"
+            />
+            <div class="blog-overlay">
+              <a href="#" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-5 text-[17px] text-gray-400 mb-4">
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-user"></i><span>Musharof Chy</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-calendar-days"></i
+                ><span>25 Dec, 2025</span>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="blog-title text-[22px] font-bold text-[#1e293b] leading-tight block"
+            >
+              Tips to quickly improve your coding speed.
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Let’s Stay Connected -->
+    <section
+      class="py-20 px-10 md:px-20 lg:px-40 bg-[url(imgs/bg_blogs.jpg)] bg-cover bg-center bg-no-repeat relative reveal-contact"
+      id="blogs"
+    >
+      <div
+        class="max-w-3xl mx-auto text-center mb-16 relative z-10 contact-header"
+      >
+        <h1 class="text-4xl md:text-5xl font-semibold text-gray-800 mb-6">
+          Let’s Stay Connected
+        </h1>
+        <p class="text-lg text-gray-500 leading-relaxed">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using.
+        </p>
+      </div>
+
+      <div
+        class="blogs_content flex flex-col lg:flex-row items-stretch justify-center w-full gap-8 relative z-10"
+      >
+        <div
+          class="blogs_content_left lg:w-1/3 bg-white p-10 rounded-2xl shadow-xl border border-gray-100 contact-left"
+        >
+          <div class="mb-8">
+            <h2 class="text-[20px] font-semibold text-gray-800 mb-1">
+              Email Address
+            </h2>
+            <a
+              href="#"
+              class="text-[16px] text-gray-400 hover:text-blue-500 transition"
+              >support@startup.com</a
+            >
+          </div>
+
+          <div class="mb-8">
+            <h2 class="text-[20px] font-semibold text-gray-800 mb-1">
+              Office Location
+            </h2>
+            <a
+              href="#"
+              class="text-[16px] text-gray-400 hover:text-blue-500 transition"
+              >76/A, Green valle, Califonia USA.</a
+            >
+          </div>
+
+          <div class="mb-8">
+            <h2 class="text-[20px] font-semibold text-gray-800 mb-1">
+              Phone Number
+            </h2>
+            <a
+              href="#"
+              class="text-[16px] text-gray-400 hover:text-blue-500 transition"
+              >+009 8754 3433 223</a
+            >
+          </div>
+
+          <div class="mb-8">
+            <h2 class="text-[20px] font-semibold text-gray-800 mb-1">
+              Skype Email
+            </h2>
+            <a
+              href="#"
+              class="text-[16px] text-gray-400 hover:text-blue-500 transition"
+              >example@yourmail.com</a
+            >
+          </div>
+
+          <hr class="w-full mb-8 border-gray-100" />
+
+          <div class="blogs_content_left_bottom">
+            <h2 class="text-[20px] font-semibold text-gray-800 mb-5">
+              Social Media
+            </h2>
+            <div class="flex gap-3">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center text-gray-400 border border-gray-200 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center text-gray-400 border border-gray-200 rounded-full hover:bg-sky-400 hover:text-white transition-all duration-300"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center text-gray-400 border border-gray-200 rounded-full hover:bg-blue-700 hover:text-white transition-all duration-300"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center text-gray-400 border border-gray-200 rounded-full hover:bg-black hover:text-white transition-all duration-300"
+              >
+                <i class="fa-brands fa-behance"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="blogs_content_right lg:w-2/3 bg-white p-10 rounded-2xl shadow-xl border border-gray-100 flex flex-col contact-right"
+        >
+          <form action="#" class="flex flex-col h-full">
+            <div class="grid gap-6 md:grid-cols-2 mb-10">
+              <div>
+                <label
+                  for="full_name"
+                  class="block mb-2 text-sm font-medium text-gray-500"
+                  >Full name</label
+                >
+                <input
+                  type="text"
+                  id="full_name"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all placeholder:text-gray-300"
+                  placeholder="Devid Wonder"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="email_address"
+                  class="block mb-2 text-sm font-medium text-gray-500"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  id="email_address"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all placeholder:text-gray-300"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="phone_number"
+                  class="block mb-2 text-sm font-medium text-gray-500"
+                  >Phone number</label
+                >
+                <input
+                  type="text"
+                  id="phone_number"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all placeholder:text-gray-300"
+                  placeholder="+009 3342 3432"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block mb-2 text-sm font-medium text-gray-500"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all placeholder:text-gray-300"
+                  placeholder="Type for subject"
+                  required
+                />
+              </div>
+              <div class="md:col-span-2">
+                <label
+                  for="message"
+                  class="block mb-2 text-sm font-medium text-gray-500"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-50 transition-all placeholder:text-gray-300"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="mt-auto flex justify-center">
+              <button
+                type="submit"
+                class="bg-blue-600 text-white font-semibold px-12 py-4 rounded-full hover:bg-blue-700 hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 focus:ring-4 focus:ring-blue-200 outline-none"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- Join with 5000+ Startups Growing with Base. -->
-    <section class="py-20" id="banner">
-      <div class="mx-40 w-ful flex items-center justify-between">
-        <div class="w-1/2 text-white">
-          <h2 class="text-[45px] text-base/14 font-semibold mb-[15px]">
+    <section class="py-20 bg-blue-600 reveal-banner" id="banner">
+      <div class="mx-40 flex items-center justify-between">
+        <div class="w-1/2 text-white banner-left">
+          <h2 class="text-[45px] leading-[1.2] font-semibold mb-[15px]">
             Join with 5000+ Startups <br />
             Growing with Base.
           </h2>
@@ -59,16 +613,26 @@
             In a efficitur leo. Ut venenatis rhoncus.
           </p>
         </div>
-        <div class="w-1/3 flex justify-end items-center">
-          <a href="#" class="bg-white px-8 py-4 rounded-4xl">Get Started Now</a>
+
+        <div class="w-1/3 flex justify-end items-center banner-right">
+          <a
+            href="#"
+            class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition"
+          >
+            Get Started Now
+          </a>
         </div>
       </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-white dark:bg-gray-900">
-      <div class="mx-15 w-ful p-4 py-6 lg:py-8">
-        <div class="md:flex md:justify-between mb-[80px]">
-          <div class="mb-6 md:mb-0 w-2/5 flex flex-col items-start">
+    <footer class="bg-white dark:bg-gray-900 reveal-footer">
+      <div class="container mx-auto p-4 py-6 lg:py-8">
+        <div
+          class="flex flex-wrap md:flex-nowrap justify-between gap-8 mb-[80px]"
+        >
+          <div
+            class="w-full md:w-1/4 flex flex-col items-start footer-col col-1 mb-6 md:mb-0"
+          >
             <a href="#" class="">
               <img
                 src="imgs/logo_base.png"
@@ -83,171 +647,170 @@
             <div class="flex mt-4 sm:justify-start sm:mt-0">
               <a
                 href="#"
-                class="text-gray-200 mr-8 text-lg hover:text-blue-600 dark:hover:text-blue-500 transition duration-300"
+                class="text-gray-200 mr-8 text-lg hover:text-blue-600 transition duration-300"
               >
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
               <a
                 href="#"
-                class="text-gray-200 mr-8 text-lg hover:text-blue-600 dark:hover:text-blue-500 transition duration-300"
+                class="text-gray-200 mr-8 text-lg hover:text-blue-600 transition duration-300"
               >
                 <i class="fa-brands fa-twitter"></i>
               </a>
               <a
                 href="#"
-                class="text-gray-200 mr-8 text-lg hover:text-blue-600 dark:hover:text-blue-500 transition duration-300"
+                class="text-gray-200 mr-8 text-lg hover:text-blue-600 transition duration-300"
               >
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
               <a
                 href="#"
-                class="text-gray-200 mr-8 text-lg hover:text-blue-600 dark:hover:text-blue-500 transition duration-300"
+                class="text-gray-200 mr-8 text-lg hover:text-blue-600 transition duration-300"
               >
                 <i class="fa-brands fa-behance"></i>
               </a>
             </div>
           </div>
-          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 w-3/4">
-            <div>
+
+          <div class="flex-1 grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div class="footer-col col-2">
               <h2
                 class="mb-6 text-[24px] font-semibold text-gray-900 dark:text-white"
               >
                 Quick Links
               </h2>
-              <ul class="text-gray-400 dark:text-gray-400 font-medium">
+              <ul class="text-gray-400 font-medium">
                 <li class="mb-4">
                   <a
                     href="#"
-                    class="hover:text-blue-600 font-medium dark:hover:text-blue-500 transition duration-300"
+                    class="hover:text-blue-600 transition duration-300"
                     >Home</a
                   >
                 </li>
                 <li class="mb-4">
                   <a
                     href="#"
-                    class="hover:text-blue-600 font-medium dark:hover:text-blue-500 transition duration-300"
+                    class="hover:text-blue-600 transition duration-300"
                     >Product</a
                   >
                 </li>
                 <li class="mb-4 flex">
                   <a
                     href="#"
-                    class="hover:text-blue-600 font-medium dark:hover:text-blue-500 transition duration-300"
+                    class="hover:text-blue-600 transition duration-300"
                     >Careers</a
                   >
-                  <p
-                    class="text-white bg-green-500 w-15 h-5 text-center rounded-xl ml-3 text-[12px] flex items-center justify-center mt-1"
+                  <span
+                    class="text-white bg-green-500 px-2 py-0.5 rounded-xl ml-3 text-[12px] flex items-center"
+                    >Hiring</span
                   >
-                    Hiring
-                  </p>
                 </li>
                 <li class="mb-4">
                   <a
                     href="#"
-                    class="hover:text-blue-600 font-medium dark:hover:text-blue-500 transition duration-300"
+                    class="hover:text-blue-600 transition duration-300"
                     >Pricing</a
                   >
                 </li>
               </ul>
             </div>
-            <div>
+
+            <div class="footer-col col-3">
               <h2
                 class="mb-6 text-[24px] font-semibold text-gray-900 dark:text-white"
               >
                 Services
               </h2>
-              <ul class="text-gray-400 dark:text-gray-400 font-medium">
+              <ul class="text-gray-400 font-medium">
                 <li class="mb-4">
                   <a
                     href="#"
-                    class="hover:text-blue-600 font-medium dark:hover:text-blue-500 transition duration-300"
+                    class="hover:text-blue-600 transition duration-300"
                     >Web Development</a
                   >
                 </li>
                 <li class="mb-4">
                   <a
                     href="#"
-                    class="hover:text-blue-600 font-medium dark:hover:text-blue-500 transition duration-300"
+                    class="hover:text-blue-600 transition duration-300"
                     >Grapics Design</a
                   >
                 </li>
-                <li class="mb-4 flex">
+                <li class="mb-4">
                   <a
                     href="#"
-                    class="hover:text-blue-600 font-medium dark:hover:text-blue-500 transition duration-300"
+                    class="hover:text-blue-600 transition duration-300"
                     >Digital Marketing</a
                   >
                 </li>
                 <li class="mb-4">
                   <a
                     href="#"
-                    class="hover:text-blue-600 font-medium dark:hover:text-blue-500 transition duration-300"
+                    class="hover:text-blue-600 transition duration-300"
                     >Ui/Ux Design</a
                   >
                 </li>
               </ul>
             </div>
-            <div>
+
+            <div class="footer-col col-4">
               <h2
                 class="mb-6 text-[24px] font-semibold text-gray-900 dark:text-white"
               >
                 Support
               </h2>
-              <ul class="text-gray-400 dark:text-gray-400 font-medium">
+              <ul class="text-gray-400 font-medium">
                 <li class="mb-4">
                   <a
                     href="#"
-                    class="hover:text-blue-600 font-medium dark:hover:text-blue-500 transition duration-300"
+                    class="hover:text-blue-600 transition duration-300"
                     >Company</a
                   >
                 </li>
                 <li class="mb-4">
                   <a
                     href="#"
-                    class="hover:text-blue-600 font-medium dark:hover:text-blue-500 transition duration-300"
+                    class="hover:text-blue-600 transition duration-300"
                     >Press media</a
                   >
                 </li>
-                <li class="mb-4 flex">
+                <li class="mb-4">
                   <a
                     href="#"
-                    class="hover:text-blue-600 font-medium dark:hover:text-blue-500 transition duration-300"
+                    class="hover:text-blue-600 transition duration-300"
                     >Our Blog</a
                   >
                 </li>
                 <li class="mb-4">
                   <a
                     href="#"
-                    class="hover:text-blue-600 font-medium dark:hover:text-blue-500 transition duration-300"
+                    class="hover:text-blue-600 transition duration-300"
                     >Contact Us</a
                   >
                 </li>
               </ul>
             </div>
           </div>
-          <div class="w-1/3">
+
+          <div class="w-full md:w-[30%] footer-col col-5">
             <h2
               class="mb-6 text-[24px] font-semibold text-gray-900 dark:text-white"
             >
               Newsletter
             </h2>
             <p class="text-gray-400 mb-6 text-base">
-              Subscribe to receive future <br />
-              updates
+              Subscribe to receive future updates
             </p>
-
-            <form class="w-full max-w-md">
+            <form class="w-full">
               <div
-                class="email_input_change_color flex items-center justify-between rounded-full px-5 py-2 bg-white"
+                class="flex items-center justify-between rounded-full px-5 py-2 bg-white border border-gray-100 transition-all duration-300 focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
               >
                 <input
                   type="email"
-                  id="default-search"
                   class="w-full h-[35px] bg-transparent border-none outline-none focus:ring-0 text-gray-600 placeholder-gray-400"
                   placeholder="Email address"
                   required
                 />
-
                 <button
                   type="submit"
                   class="text-gray-400 hover:text-blue-600 transition-colors ml-2"
@@ -258,37 +821,39 @@
             </form>
           </div>
         </div>
-        <hr
-          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
-        />
-        <div class="flex justify-center items-center">
-          <div class="w-1/2 flex justify-start items-center">
-            <ul class="flex">
+
+        <hr class="my-6 border-gray-200 dark:border-gray-700 lg:my-8" />
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <div class="footer-col col-6">
+            <ul class="flex flex-wrap justify-center md:justify-start">
               <li>
                 <a
                   href="#"
-                  class="text-lg font-normal text-gray-500 hover:text-blue-900 transition duration-500 mr-[30px]"
+                  class="text-lg text-gray-500 hover:text-blue-900 transition duration-500 mr-[30px]"
                   >English</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-lg font-normal text-gray-500 hover:text-blue-900 transition duration-500 mr-[30px]"
+                  class="text-lg text-gray-500 hover:text-blue-900 transition duration-500 mr-[30px]"
                   >Privacy Policy</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-lg font-normal text-gray-500 hover:text-blue-900 transition duration-500 mr-[30px]"
+                  class="text-lg text-gray-500 hover:text-blue-900 transition duration-500"
                   >Support</a
                 >
               </li>
             </ul>
           </div>
-          <div class="w-1/2 flex justify-end items-center">
-            <p class="text-lg font-normal text-gray-500">
+          <div class="footer-col col-7">
+            <p class="text-lg text-gray-500 text-center md:text-right">
               © 2025 Base. All rights reserved
             </p>
           </div>
@@ -296,6 +861,97 @@
       </div>
     </footer>
 
-    <!-- javascript -->
+    <script>
+      window.addEventListener("scroll", () => {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const totalHeight = document.documentElement.scrollHeight;
+
+        // Thiết lập các mốc kích hoạt
+        const pointReveal = totalHeight * 0.1;
+        const pointCount = totalHeight * 0.3;
+        const pointBanner = totalHeight * 0.45;
+        const pointBrands = totalHeight * 0.6;
+        const pointBlogs = totalHeight * 0.75;
+        const pointContact = totalHeight * 0.9;
+        const pointFooter = totalHeight * 0.95;
+
+        // --- 1. Reveal Testimonials ---
+        const reveals = document.querySelectorAll(".reveal");
+        if (scrollPosition >= pointReveal) {
+          reveals.forEach((el) => el.classList.add("active"));
+        }
+
+        // --- 2. Reveal & CountUp (Phần số liệu) ---
+        const sectionCount = document.querySelector(".reveal-count");
+        if (
+          sectionCount &&
+          scrollPosition >= pointCount &&
+          !sectionCount.classList.contains("active")
+        ) {
+          sectionCount.classList.add("active");
+
+          const options = {
+            startVal: 0,
+            duration: 2,
+            useEasing: true,
+            useGrouping: true,
+          };
+
+          setTimeout(() => {
+            new countUp.CountUp("count1", 785, options).start();
+          }, 700);
+          setTimeout(() => {
+            new countUp.CountUp("count2", 533, options).start();
+          }, 1300);
+          setTimeout(() => {
+            new countUp.CountUp("count3", 865, options).start();
+          }, 1900);
+          setTimeout(() => {
+            new countUp.CountUp("count4", 346, options).start();
+          }, 2500);
+        }
+
+        // --- 3. Reveal Banner ---
+        const sectionBanner = document.querySelector(".reveal-banner");
+        if (sectionBanner && scrollPosition >= pointBanner) {
+          sectionBanner.classList.add("active");
+        }
+
+        // --- 4. Reveal Brands ---
+        const sectionBrands = document.querySelector(".reveal-brands");
+        if (sectionBrands && scrollPosition >= pointBrands) {
+          sectionBrands.classList.add("active");
+        }
+
+        // --- 5. Reveal Blogs ---
+        const sectionBlogs = document.querySelector(".reveal-blogs");
+        if (sectionBlogs && scrollPosition >= pointBlogs) {
+          sectionBlogs.classList.add("active");
+        }
+
+        // --- 6. Reveal Contact ---
+        const sectionContact = document.querySelector(".reveal-contact");
+        if (sectionContact && scrollPosition >= pointContact) {
+          sectionContact.classList.add("active");
+        }
+
+        // --- 7. Reveal Footer ---
+        const sectionFooter = document.querySelector(".reveal-footer");
+        if (sectionFooter && scrollPosition >= pointFooter) {
+          sectionFooter.classList.add("active");
+        }
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.min.js"></script>
+    <script>
+      function toggleSlide() {
+        const s1 = document.getElementById("slide-1");
+        const s2 = document.getElementById("slide-2");
+
+        // Đảo ngược trạng thái ẩn/hiện
+        s1.classList.toggle("hidden");
+        s2.classList.toggle("hidden");
+      }
+    </script>
   </body>
 </html>

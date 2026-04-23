@@ -19,3 +19,220 @@
     border: 1.5px solid blue;
     
 }
+
+/*<!-- Client’s Testimonials -->*/
+.reveal {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal.active .testimonial-slide {
+    animation: fadeInDownCustom 1s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+@keyframes fadeInDownCustom {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* <!-- Number CountUp.js -->*/
+
+.count-item {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.6s ease-out;
+}
+
+.active .count-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.active .count-item:nth-child(1) { transition-delay: 0.1s; }
+.active .count-item:nth-child(2) { transition-delay: 0.7s; }
+.active .count-item:nth-child(3) { transition-delay: 1.3s; }
+.active .count-item:nth-child(4) { transition-delay: 1.9s; }
+
+
+/* Brand */
+.brand-item {
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.reveal-brands.active .brand-item {
+    opacity: 0.5;
+    transform: translateY(0);
+}
+
+/* Delay tuần tự cho 6 logo */
+.reveal-brands.active .brand-item:nth-child(1) { transition-delay: 0.1s; }
+.reveal-brands.active .brand-item:nth-child(2) { transition-delay: 0.2s; }
+.reveal-brands.active .brand-item:nth-child(3) { transition-delay: 0.3s; }
+.reveal-brands.active .brand-item:nth-child(4) { transition-delay: 0.4s; }
+.reveal-brands.active .brand-item:nth-child(5) { transition-delay: 0.5s; }
+.reveal-brands.active .brand-item:nth-child(6) { transition-delay: 0.6s; }
+
+/*Blogs*/
+.brand-item:hover {
+    opacity: 1 !important;
+    filter: grayscale(0);
+    transform: scale(1.1) !important;
+}
+
+.blog-title {
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.blog-title:hover {
+    color: #3b82f6 !important;
+}
+
+/* 2. Cấu trúc Overlay xám */
+.blog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 41, 59, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-out;
+}
+
+/* Khi hover vào card, overlay trượt lên */
+.blog-card:hover .blog-overlay {
+    transform: translateY(0);
+}
+
+.read-more-btn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #2563eb; /* Xanh đậm hơn khi hover vào nút */
+}
+
+.blog-header, .blog-card-item {
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal-blogs.active .blog-header {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+.reveal-blogs.active .blog-card-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-blogs.active .blog-card-item:nth-child(1) { transition-delay: 0.4s; }
+.reveal-blogs.active .blog-card-item:nth-child(2) { transition-delay: 0.6s; }
+.reveal-blogs.active .blog-card-item:nth-child(3) { transition-delay: 0.8s; }
+
+
+
+/* --- Stay Connected Animation --- */
+.contact-header, 
+.contact-left, 
+.contact-right {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, opacity; 
+}
+
+.reveal-contact.active .contact-header {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+.reveal-contact.active .contact-left {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+
+.reveal-contact.active .contact-right {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.7s;
+}
+
+.reveal-contact.active .contact-left:hover,
+.reveal-contact.active .contact-right:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+
+
+/* --- Banner Animation --- */
+.banner-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-out;
+}
+
+.banner-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease-out;
+}
+
+.reveal-banner.active .banner-left,
+.reveal-banner.active .banner-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* --- Footer Animation --- */
+.footer-col {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-footer.active .footer-col {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-footer.active .col-1 { transition-delay: 0.1s; }
+.reveal-footer.active .col-2 { transition-delay: 0.3s; }
+.reveal-footer.active .col-3 { transition-delay: 0.5s; }
+.reveal-footer.active .col-4 { transition-delay: 0.7s; }
+.reveal-footer.active .col-5 { transition-delay: 0.9s; }
+.reveal-footer.active .col-6 { transition-delay: 1.1s; }
+.reveal-footer.active .col-7 { transition-delay: 1.3s; }
